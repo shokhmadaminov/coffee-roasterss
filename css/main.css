@@ -71,6 +71,25 @@ body {
     padding: 0 20px;
     margin: 0 auto;
 }
+/* PRIMARY BTN */
+.primary-btn {
+    background-color: var(--primary-color);
+    padding: 16px 24px;
+    border-radius: 100px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: var(--white-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.primary-btn:hover {
+    opacity: 0.8;
+}
+.primary-btn:active {
+    opacity: 0.6;
+}
 
 /* HEADER STYLES */
 .header {
@@ -86,6 +105,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 50px;
 }
 .site-logo {
     display: flex;
@@ -122,6 +142,48 @@ body {
 .sitenav__link:hover {
     color: var(--primary-color);
 }
+.header-bottom__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.header-bottom__home-text-wrapper {
+    width: 100%;
+    max-width: 464px;
+    margin-top: 116px;
+    margin-left: 130px;
+}
+.header-bottom__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: var(--black-color);
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.header-bottom__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black-color);
+    margin-bottom: 34px;
+}
+.header-bottom__img-wrapper {
+    width: 710px;
+    height: 696px;
+    background-image: url("../images/jpg/home-header-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.header-bottom__round-img {
+    width: 213px;
+    height: 214px;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    top: -81.62px;
+    left: -92px;
+}
 
 
 
@@ -139,5 +201,8 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
     .header {
         background-image: url("../images/jpg/header-bg-img@2x.jpg");
+    }
+    .header-bottom__img-wrapper {
+        background-image: url("../images/jpg/home-header-img@2x.jpg");
     }
 }
